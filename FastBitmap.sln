@@ -5,19 +5,49 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastBitmap", "src\FastBitmap.csproj", "{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{D6E61355-95EB-4438-9774-715942FED2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graybox-getpixel", "benchmarks\graybox-getpixel\graybox-getpixel.csproj", "{B58DA70D-2567-4515-B3AB-B3864807E60B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graybox-opencv", "benchmarks\graybox-opencv\graybox-opencv.vcxproj", "{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Debug|x64.Build.0 = Debug|Any CPU
 		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Release|x64.ActiveCfg = Release|Any CPU
+		{3223666C-30EC-4FB5-92D5-17EC19EC6AF4}.Release|x64.Build.0 = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Debug|x64.Build.0 = Debug|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Release|x64.ActiveCfg = Release|Any CPU
+		{B58DA70D-2567-4515-B3AB-B3864807E60B}.Release|x64.Build.0 = Release|Any CPU
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Debug|Any CPU.ActiveCfg = Release|x64
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Debug|x64.ActiveCfg = Debug|x64
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Debug|x64.Build.0 = Debug|x64
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Release|Any CPU.ActiveCfg = Release|x64
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Release|x64.ActiveCfg = Release|x64
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B58DA70D-2567-4515-B3AB-B3864807E60B} = {D6E61355-95EB-4438-9774-715942FED2FD}
+		{E4D96567-9341-4B4B-BD7F-95D06A03A2C3} = {D6E61355-95EB-4438-9774-715942FED2FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E9073DE-1824-4EC9-822A-B94F44883451}
